@@ -1,13 +1,14 @@
 // import App from 'next/app'
-import GlobalStyle from "../src/theme/GlobalStyle";
+import React from 'react';
 import { wrapper, store } from "../src/store/store";
 import { Provider } from "react-redux";
+import GlobalStyle from "../src/theme/GlobalStyle";
 
 function MyApp({ Component, pageProps }) {
-    return ( 
+    return (
         <>
             <Provider store={store}>
-                <GlobalStyle/>
+                <GlobalStyle />
                 <Component {...pageProps} />
             </Provider>
         </>

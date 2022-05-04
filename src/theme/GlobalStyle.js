@@ -1,36 +1,13 @@
-import { theme } from './theme';
+import React from 'react';
 
 export default function GlobalStyle() {
     return (
         <style global jsx>{`
-        * {
-          box-sizing: border-box;
-          padding: 0;
-          margin: 0;
-        }
         a {
           text-decoration: none;
         }
         body {
-          font-family: ${theme.typography.fontFamily}, sans-serif;
-        }
-        img, video {
-          max-width: 100%;
-          height: auto;
-        }
-        audio, canvas, embed, iframe, img, object, svg, video {
-          display: block;
-          vertical-align: middle;
-        }
-        .sr-only {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0,0,0,0);
-          border: 0;
+          font-family: sans-serif;
         }
         /* ================== */
         /* NextJS */

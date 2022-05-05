@@ -1,5 +1,4 @@
 import { submitValidation } from '../../src/utils/validations';
-import { FixFilter } from '../../src/utils/genericUtils';
 
 describe("Validação da pasta Utils", () => {
 

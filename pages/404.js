@@ -1,4 +1,5 @@
 import Link from '../src/components/Link';
+import React from 'react';
 
 export default function Add_New_User() {
     return (

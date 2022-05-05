@@ -6,12 +6,12 @@ import GlobalStyle from "../src/theme/GlobalStyle";
 
 function MyApp({ Component, pageProps }) {
     return (
-        <>
+        <React.Fragment>
             <Provider store={store}>
                 <GlobalStyle />
                 <Component {...pageProps} />
             </Provider>
-        </>
+        </React.Fragment>
     )
   }
 

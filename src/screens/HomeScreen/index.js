@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector  } from 'react-redux';
 import { getUser } from '../../store/actions/userAction';
 import { UsersTable } from '../../components/Table';
-import Header from '../../components/Header';
+import { HomeStyle } from './homeStyle';
+import Link from '../../components/Link';
 
 const HomeScreen = () => {
 
@@ -19,9 +20,8 @@ const HomeScreen = () => {
 
     return (
         <>
-            <Header path={'/add-u'} pathName={"Adicionar novo usuário"}>
-                Tabela de usuários
-            </Header>
+            <HomeStyle />
+            <Link href={"/add-u"}>Adicionar novo usuário</Link>
             { list.length > 0 ? <UsersTable _data={list} /> : <></>}
         </>
     )
